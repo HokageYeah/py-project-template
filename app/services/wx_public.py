@@ -69,7 +69,6 @@ async def fetch_wx_article_detail_with_body(request_data: ArticleDetailRequest):
             return {
                 "data": "123",
                 "ret": ["SUCCESS::获取文章详情成功"],
-                "v": 1,
                 'asda': '12313'
             }
             # return {

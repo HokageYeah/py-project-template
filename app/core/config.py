@@ -29,7 +29,7 @@ class Settings(BaseSettings):
     # DATABASE_URL: str # 数据库连接字符串 暂时不配置
     DEBUG: bool = False # 是否为调试模式
     ENVIRONMENT: str # 环境变量
-
+    VERSION: int = 1 # 版本号
 
     # docker 数据库字段
     MYSQL_ROOT_PASSWORD: Optional[str] = "aa123456"

@@ -1811,60 +1811,244 @@
 2025-05-17 14:07:49,984 - sqlalchemy.engine.Engine - INFO - ROLLBACK
 2025-05-17 14:07:54,502 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
 2025-05-17 14:07:54,502 - root - INFO - 是否包含评论: False, 最大评论数: 10
-2025-05-17 16:27:04,508 - root - INFO - 日志系统初始化完成
-2025-05-17 16:27:04,621 - mysql.connector - DEBUG - Building SSL context
-2025-05-17 16:27:04,655 - mysql.connector - DEBUG - Switching to SSL
-2025-05-17 16:27:04,674 - mysql.connector - DEBUG - SSL has been enabled
-2025-05-17 16:27:04,674 - mysql.connector - DEBUG - Starting authorization phase
-2025-05-17 16:27:04,674 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
-2025-05-17 16:27:04,674 - mysql.connector - INFO - package: mysql.connector.plugins
-2025-05-17 16:27:04,674 - mysql.connector - INFO - plugin_name: caching_sha2_password
-2025-05-17 16:27:04,674 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
-2025-05-17 16:27:04,676 - mysql.connector - DEBUG - Server's response is an auth switch request
-2025-05-17 16:27:04,676 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
-2025-05-17 16:27:04,676 - mysql.connector - INFO - package: mysql.connector.plugins
-2025-05-17 16:27:04,676 - mysql.connector - INFO - plugin_name: mysql_native_password
-2025-05-17 16:27:04,677 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2025-05-17 16:27:04,677 - mysql.connector - DEBUG - # request: b"t\xba\x0e\xdd=\xe4\xa3\x02<-B\xc9\xaf\xe9\xe9'\xd3p\x18\xcf" size: 20
-2025-05-17 16:27:04,695 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
-2025-05-17 16:27:04,695 - mysql.connector - DEBUG - mysql_native_password completed succesfully
-2025-05-17 16:27:04,757 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
-2025-05-17 16:27:04,757 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:04,761 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
-2025-05-17 16:27:04,761 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:04,766 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
-2025-05-17 16:27:04,766 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:04,770 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
-2025-05-17 16:27:04,771 - sqlalchemy.engine.Engine - INFO - SELECT 1
-2025-05-17 16:27:04,772 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {}
-2025-05-17 16:27:04,772 - root - INFO - sqlalchemy数据库连接成功
-2025-05-17 16:27:04,772 - sqlalchemy.engine.Engine - INFO - ROLLBACK
-2025-05-17 16:27:04,798 - root - INFO - 启动应用服务器...
-2025-05-17 16:27:05,436 - root - INFO - 日志系统初始化完成
-2025-05-17 16:27:05,489 - mysql.connector - DEBUG - Building SSL context
-2025-05-17 16:27:05,515 - mysql.connector - DEBUG - Switching to SSL
-2025-05-17 16:27:05,530 - mysql.connector - DEBUG - SSL has been enabled
-2025-05-17 16:27:05,531 - mysql.connector - DEBUG - Starting authorization phase
-2025-05-17 16:27:05,531 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
-2025-05-17 16:27:05,531 - mysql.connector - INFO - package: mysql.connector.plugins
-2025-05-17 16:27:05,531 - mysql.connector - INFO - plugin_name: caching_sha2_password
-2025-05-17 16:27:05,531 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
-2025-05-17 16:27:05,531 - mysql.connector - DEBUG - Server's response is an auth switch request
-2025-05-17 16:27:05,531 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
-2025-05-17 16:27:05,531 - mysql.connector - INFO - package: mysql.connector.plugins
-2025-05-17 16:27:05,531 - mysql.connector - INFO - plugin_name: mysql_native_password
-2025-05-17 16:27:05,532 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
-2025-05-17 16:27:05,532 - mysql.connector - DEBUG - # request: b'\xe7O\\3\x97\x00\xa6\x93\xf8\x02*\x8b\x8e\x8c\xa9\x8c\xbc\xd4\xc6.' size: 20
-2025-05-17 16:27:05,533 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
-2025-05-17 16:27:05,533 - mysql.connector - DEBUG - mysql_native_password completed succesfully
-2025-05-17 16:27:05,562 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
-2025-05-17 16:27:05,562 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:05,563 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
-2025-05-17 16:27:05,563 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:05,564 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
-2025-05-17 16:27:05,564 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
-2025-05-17 16:27:05,564 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
-2025-05-17 16:27:05,565 - sqlalchemy.engine.Engine - INFO - SELECT 1
-2025-05-17 16:27:05,565 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {}
-2025-05-17 16:27:05,566 - root - INFO - sqlalchemy数据库连接成功
-2025-05-17 16:27:05,566 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:28:54,865 - root - INFO - 日志系统初始化完成
+2025-05-17 17:28:55,178 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:28:55,455 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:28:55,616 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:28:55,617 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:28:55,617 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:28:55,617 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:28:55,618 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:28:55,618 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:28:55,622 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:28:55,629 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:28:55,632 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:28:55,633 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:28:55,638 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:28:55,643 - mysql.connector - DEBUG - # request: b',\xcf\xb6o\xc2\x1f\x8d\x0fW.\x19\xb7\xc5:\x1b<\x81\xaee!' size: 20
+2025-05-17 17:28:55,661 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:28:55,664 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:28:55,807 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:28:55,810 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:55,831 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:28:55,831 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:55,834 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:28:55,834 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:55,845 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:28:55,849 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:28:55,850 - sqlalchemy.engine.Engine - INFO - [generated in 0.00047s] {}
+2025-05-17 17:28:55,851 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:28:55,851 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:28:55,910 - root - INFO - 启动应用服务器...
+2025-05-17 17:28:56,704 - root - INFO - 日志系统初始化完成
+2025-05-17 17:28:56,746 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:28:56,772 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:28:56,783 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:28:56,783 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:28:56,783 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:28:56,783 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:28:56,783 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:28:56,783 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:28:56,785 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:28:56,785 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:28:56,785 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:28:56,785 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:28:56,785 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:28:56,786 - mysql.connector - DEBUG - # request: b'\\xC\r.\xa6\x8dX\xf7\x08\x15\xa8\xfaX\xfdp\xba\xa9\xa8x' size: 20
+2025-05-17 17:28:56,786 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:28:56,787 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:28:56,791 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:28:56,792 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:56,793 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:28:56,794 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:56,794 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:28:56,794 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:28:56,795 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:28:56,796 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:28:56,796 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] {}
+2025-05-17 17:28:56,797 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:28:56,797 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:29:06,939 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:06,939 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:09,766 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:09,766 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:33,619 - root - INFO - 日志系统初始化完成
+2025-05-17 17:29:33,760 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:29:33,789 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:29:33,812 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:29:33,812 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:29:33,812 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:29:33,812 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:29:33,812 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:29:33,813 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:29:33,816 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:29:33,816 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:29:33,816 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:29:33,816 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:29:33,817 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:29:33,817 - mysql.connector - DEBUG - # request: b"\xc2\x03\xbfjP\xf7=\xf3\xbc\n@i}D\xf4\x83'\xa4\xa9," size: 20
+2025-05-17 17:29:33,829 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:29:33,830 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:29:33,846 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:29:33,846 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:29:33,849 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:29:33,849 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:29:33,850 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:29:33,850 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:29:33,851 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:29:33,852 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:29:33,852 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] {}
+2025-05-17 17:29:33,853 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:29:33,853 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:29:33,897 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:33,897 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:36,301 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:36,301 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:45,641 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:45,655 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:47,332 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:47,332 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:29:48,830 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:29:48,835 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:00,298 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:00,298 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:02,221 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:02,228 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:11,161 - root - INFO - 日志系统初始化完成
+2025-05-17 17:30:11,242 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:30:11,272 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:30:11,296 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:30:11,297 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:30:11,297 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:30:11,297 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:11,297 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:30:11,298 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:30:11,303 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:30:11,304 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:30:11,304 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:11,304 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:30:11,309 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:30:11,309 - mysql.connector - DEBUG - # request: b'\x1c\xce\n\x91\x8b\xa1\xd3\xb3\x84\xce2\xbe|\xce^g\x04\x03%1' size: 20
+2025-05-17 17:30:11,350 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:30:11,351 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:30:11,363 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:30:11,364 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:11,365 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:30:11,365 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:11,366 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:30:11,366 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:11,366 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:30:11,368 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:30:11,368 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] {}
+2025-05-17 17:30:11,369 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:30:11,369 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:30:11,415 - root - INFO - 启动应用服务器...
+2025-05-17 17:30:12,172 - root - INFO - 日志系统初始化完成
+2025-05-17 17:30:12,217 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:30:12,242 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:30:12,254 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:30:12,255 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:30:12,255 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:30:12,255 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:12,255 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:30:12,255 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:30:12,255 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:30:12,255 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:30:12,255 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:12,255 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:30:12,256 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:30:12,256 - mysql.connector - DEBUG - # request: b'\xa7\xb0\xad\xc1\x86Y?Mb\xe7JI\x8b\x05$\x1b\xce\x815\x07' size: 20
+2025-05-17 17:30:12,256 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:30:12,257 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:30:12,261 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:30:12,261 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:12,262 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:30:12,262 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:12,262 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:30:12,263 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:12,263 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:30:12,264 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:30:12,264 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {}
+2025-05-17 17:30:12,264 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:30:12,264 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:30:15,216 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:15,216 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:25,070 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:25,073 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:26,139 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:26,139 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:27,033 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:27,034 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:27,874 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:27,875 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:28,659 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:28,659 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:29,445 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:29,445 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:30,133 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:30,133 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:30,973 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:30,973 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:31,628 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:31,629 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:36,405 - root - INFO - 日志系统初始化完成
+2025-05-17 17:30:36,465 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:30:36,497 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:30:36,513 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:30:36,514 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:30:36,514 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:30:36,515 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:36,515 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:30:36,515 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:30:36,516 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:30:36,516 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:30:36,516 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:36,516 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:30:36,521 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:30:36,523 - mysql.connector - DEBUG - # request: b'$\xe2\xf3\xbb\xe6Bb\xa9E\xb6=\x16\x91(\x1f2\x03\x03\xa7\x87' size: 20
+2025-05-17 17:30:36,526 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:30:36,527 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:30:36,533 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:30:36,534 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:36,535 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:30:36,536 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:36,537 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:30:36,541 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:36,543 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:30:36,544 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:30:36,544 - sqlalchemy.engine.Engine - INFO - [generated in 0.00053s] {}
+2025-05-17 17:30:36,545 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:30:36,545 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:30:36,581 - root - INFO - 启动应用服务器...
+2025-05-17 17:30:37,234 - root - INFO - 日志系统初始化完成
+2025-05-17 17:30:37,271 - mysql.connector - DEBUG - Building SSL context
+2025-05-17 17:30:37,300 - mysql.connector - DEBUG - Switching to SSL
+2025-05-17 17:30:37,310 - mysql.connector - DEBUG - SSL has been enabled
+2025-05-17 17:30:37,310 - mysql.connector - DEBUG - Starting authorization phase
+2025-05-17 17:30:37,310 - mysql.connector - DEBUG - The provided initial strategy is caching_sha2_password
+2025-05-17 17:30:37,310 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:37,310 - mysql.connector - INFO - plugin_name: caching_sha2_password
+2025-05-17 17:30:37,310 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-17 17:30:37,311 - mysql.connector - DEBUG - Server's response is an auth switch request
+2025-05-17 17:30:37,311 - mysql.connector - DEBUG - Switching to strategy mysql_native_password
+2025-05-17 17:30:37,311 - mysql.connector - INFO - package: mysql.connector.plugins
+2025-05-17 17:30:37,311 - mysql.connector - INFO - plugin_name: mysql_native_password
+2025-05-17 17:30:37,311 - mysql.connector - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-05-17 17:30:37,311 - mysql.connector - DEBUG - # request: b'\xf6"\x12)\xa4}\xbb\x03\x15\xab3\xf5%\xa2\x1e\xe9\xbc\x8b\xb6\xda' size: 20
+2025-05-17 17:30:37,312 - mysql.connector - DEBUG - # server response packet: b'\x07\x00\x00\x05\x00\x00\x00\x02\x00\x00\x00'
+2025-05-17 17:30:37,313 - mysql.connector - DEBUG - mysql_native_password completed succesfully
+2025-05-17 17:30:37,315 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2025-05-17 17:30:37,316 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:37,318 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2025-05-17 17:30:37,318 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:37,319 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2025-05-17 17:30:37,319 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-17 17:30:37,319 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-17 17:30:37,320 - sqlalchemy.engine.Engine - INFO - SELECT 1
+2025-05-17 17:30:37,320 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] {}
+2025-05-17 17:30:37,323 - root - INFO - sqlalchemy数据库连接成功
+2025-05-17 17:30:37,323 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-17 17:30:39,537 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:39,537 - root - INFO - 是否包含评论: False, 最大评论数: 10
+2025-05-17 17:30:40,843 - root - INFO - 正在请求文章详情URL: https://weixin.sogou.com/weixin?type=2&s_from=input&query=1&ie=utf8&_sug_=n&_sug_type_=
+2025-05-17 17:30:40,843 - root - INFO - 是否包含评论: False, 最大评论数: 10

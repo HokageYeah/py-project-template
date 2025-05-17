@@ -4,6 +4,7 @@ from fastapi.exceptions import HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.exceptions import ResponseValidationError
 from app.schemas.common_data import ApiResponseData, PlatformEnum
+from app.core.config import settings
 # 自定义HTTP异常处理器
 async def http_exception_handler(request: Request, exc: HTTPException):
     """
@@ -32,7 +33,7 @@ async def http_exception_handler(request: Request, exc: HTTPException):
         'data': {
             "request_method": request.method,
         },
-        'v': 1,
+        'v': settings.VERSION,
         'api': path.strip("/")
     }
     
@@ -94,7 +95,7 @@ async def request_validation_error_handler(request: Request, exc: RequestValidat
             "platform": platform,
             "ret": [f"ERROR::缺少必需的参数或参数格式错误: {missing_field_names_str}"],
             "data": {request_method: request_method},
-            "v": 1,
+            "v": settings.VERSION,
             "api": request_url.strip("/")
         }
     )
@@ -123,7 +124,7 @@ async def response_validation_error_handler(request: Request, exc: ResponseValid
         "platform": platform,
         "api": request_url.strip("/"),
         "ret": ["SUCCESS::请求成功"],
-        "v": 1
+        "v": settings.VERSION
     }
     print('response_validation_error_handler----original_response----', original_response)
     # 检查原始响应是否为字典类型

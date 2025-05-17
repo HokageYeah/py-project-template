@@ -9,7 +9,7 @@ import logging
 from fastapi.exceptions import ResponseValidationError
 
 from app.schemas.common_data import ApiResponseData, PlatformEnum
-
+from app.core.config import settings
 
 class ResponseValidatorMiddleware(BaseHTTPMiddleware):
     """
@@ -116,7 +116,7 @@ class ResponseValidatorMiddleware(BaseHTTPMiddleware):
                             "api": path.strip("/"),
                             "data": response_data,  # 将原始响应放入data字段
                             "ret": ["SUCCESS"],
-                            "v": 1
+                            "v": settings.VERSION
                         }
                         print('formatted_response-----', formatted_response)
                         # 返回格式化后的响应
