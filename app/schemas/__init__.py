@@ -1,1 +1,1 @@
-from app.schemas.article import Article, ArticleCreate, ArticleUpdate
+from app.schemas.wx_data import ArticleDetailRequest

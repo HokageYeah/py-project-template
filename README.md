@@ -1,6 +1,6 @@
-# Python后台工程模板
+# 微信公众号爬虫
 
-这是一个Python后台工程的模板项目项目。
+这是一个用于爬取微信公众号资源的Python项目。
 
 ## 集成框架
 
@@ -46,7 +46,8 @@
 │   ├── models/           # 数据库模型
 │   │   └── article.py   # 文章模型
 │   ├── schemas/          # Pydantic模型
-│   │   └── article.py   # 文章数据验证模型
+│   │   └── wx_data.py   # 微信公众号数据验证模型
+│   │   └── common_data.py   # 通用数据验证模型
 │   ├── scripts/          # 脚本工具
 │   │   ├── create_database.py # 创建数据库脚本
 │   │   ├── init_database.py  # 初始化数据库脚本
@@ -54,7 +55,7 @@
 │   │   ├── docker-entrypoint.sh # docker启动脚本
 │   │   └── set_env.py        # 环境设置脚本
 │   ├── services/         # 业务逻辑服务
-│   │   └── wx_public.py # 微信公众号服务（示例接口）
+│   │   └── wx_public.py # 微信公众号服务
 │   ├── __init__.py      # 包初始化文件
 │   └── main.py          # 应用入口
 ├── logs/                 # 日志文件目录
@@ -252,7 +253,7 @@ if __name__ == "__main__":
 
 ## API接口
 
-### 搜索微信公众号文章（示例接口）
+### 搜索微信公众号文章
 
 ```
 GET /api/v1/wx/search?query=关键词
