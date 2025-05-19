@@ -47,6 +47,8 @@
 │   │   └── logging.py   # 日志配置
 │   ├── db/               # 数据库相关
 │   │   └── sqlalchemy_db.py # SQLAlchemy数据库连接
+│   │── decorators/       # 装饰器
+│   │   └── cache_decorator.py # 缓存装饰器
 │   ├── middleware/       # 中间件
 │   │   └── exception_handlers.py # 异常处理器
 │   ├── models/           # 数据库模型
