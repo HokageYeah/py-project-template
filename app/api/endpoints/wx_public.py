@@ -1,9 +1,15 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Body
 from sqlalchemy.orm import Session
+from loguru import logger
 
-from app.services.wx_public import fetch_wx_articles, fetch_wx_article_detail, fetch_wx_article_detail_with_body
+from app.services.wx_public import (
+    fetch_wx_articles, 
+    fetch_wx_article_detail, 
+    fetch_wx_article_detail_with_body
+)
 from app.schemas.wx_data import ArticleDetailRequest
 from app.schemas.common_data import ApiResponseData
+from app.decorators.cache_decorator import ttl_cache, timed_cache, get_cache
 
 
 router = APIRouter()
@@ -38,3 +44,4 @@ async def search_wx_article_detail_body(params: ArticleDetailRequest):
     """
     result = await fetch_wx_article_detail_with_body(params)
     return result
+

@@ -12,8 +12,13 @@ from app.middleware.exception_handlers import request_validation_error_handler, 
 from app.middleware.response_validator import ResponseValidatorMiddleware
 from app.schemas.common_data import ApiResponseData, PlatformEnum
 
-# 初始化日志系统
+# 初始化日志系统（这个是系统日志，操作复杂，设置复杂，所以先舍弃）
+# setup_logging()
+
+# 使用loguru初始化日志系统
+from app.core.logging_uru import setup_logging
 setup_logging()
+
 
 app = FastAPI(
     title=settings.PROJECT_NAME,

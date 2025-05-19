@@ -1,7 +1,9 @@
 import httpx
 from fastapi import HTTPException
 import logging
+from loguru import logger
 from app.schemas.wx_data import ArticleDetailRequest
+from app.decorators.cache_decorator import ttl_cache, timed_cache
 
 async def fetch_wx_articles(query: str):
     """获取微信公众号文章"""
@@ -32,7 +34,7 @@ async def fetch_wx_articles(query: str):
         raise HTTPException(status_code=500, detail=f"未知错误: {e}")
 
 async def fetch_wx_article_detail(article_id: str):
-    """获取微信公众号文章详情"""
+    """使用Query参数获取微信公众号文章详情"""
     url = f"https://weixin.sogou.com/weixin?type=2&s_from=input&query={article_id}&ie=utf8&_sug_=n&_sug_type_="
     try:
         async with httpx.AsyncClient() as client:
